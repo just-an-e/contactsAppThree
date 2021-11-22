@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">contactsAppThree</string>
+    <string name="appHeaderTextString">Contacts App</string>
+    <string name="contactOneTextString">Bob Ross</string>
+    <string name="contactTwoTextString">Mr. Rogers</string>
+    <string name="contactThreeTextString">Tom Hanks</string>
+    <string name="detailsButtonsText">Details</string>
+    <string name="contactOneImageDesc">Bob Ross\'s Picture</string>
+    <string name="contactPhoneNumberTag">Phone Number: </string>
+    <string name="contactOnePhoneNumberText">202-230-3028</string>
+    <string name="contactEmailAddressTag">Email Address: </string>
+    <string name="contactOneEmailAddressText">bob.ross@gmail.com</string>
+    <string name="backTag">Back</string>
+    <string name="contactTwoPhoneNumberText">506-648-9135</string>
+    <string name="contactTwoEmailAddressText">fred.rogers@gmail.com</string>
+    <string name="contactThreePhoneNumberText">934-283-0219</string>
+    <string name="contactThreeEmailAddressText">tom.hanks@gmail.com</string>
+</resources>

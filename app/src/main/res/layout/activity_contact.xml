@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/contactOneNameDesc"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:text="@string/contactOneTextString"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="back Button"
+            android:onClick="backButtonClick"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/contactOneImage"
+        android:layout_width="match_parent"
+        android:layout_height="334dp"
+        android:contentDescription="@string/contactOneImageDesc"
+        app:srcCompat="@drawable/bobrosspfp" />
+
+    <View
+        android:id="@+id/imageInformationDivider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/contactOnePhoneNumberLabel"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/contactPhoneNumberTag" />
+
+        <TextView
+            android:id="@+id/contactOnePhoneNumber"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/contactOnePhoneNumberText" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/phoneNumberEmailAddressDivider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/contactOneEmailAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/contactEmailAddressTag" />
+
+        <TextView
+            android:id="@+id/contactOneEmailAddress"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/contactOneEmailAddressText" />
+    </LinearLayout>
+
+</LinearLayout>

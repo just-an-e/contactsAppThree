@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/appHeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appHeaderTextString"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/contactOneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contactOneTextString"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/detailsButtonOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="detailsButtonOneClick"
+        android:text="@string/detailsButtonsText" />
+
+    <TextView
+        android:id="@+id/contactTwoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contactTwoTextString"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/detailsButtonTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="detailsButtonTwoClick"
+        android:text="@string/detailsButtonsText" />
+
+    <TextView
+        android:id="@+id/contactThreeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contactThreeTextString"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/detailsButtonThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/detailsButtonsText"
+        android:onClick="detailsButtonThreeClick"
+        app:srcCompat="@android:drawable/ic_menu_zoom" />
+
+</LinearLayout>
