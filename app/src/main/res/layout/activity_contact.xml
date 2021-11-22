@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/contactOneNameDesc"
+            android:id="@+id/contactNameDesc"
             android:layout_width="322dp"
             android:layout_height="wrap_content"
             android:text="@string/contactOneTextString"
