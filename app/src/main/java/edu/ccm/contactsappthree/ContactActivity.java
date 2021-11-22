@@ -9,28 +9,27 @@ import android.widget.RadioButton;
 
 public class ContactActivity extends AppCompatActivity {
 
+    public static final String CONTACT_NUMBER = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
         Intent intent = getIntent();
-        int colorId = intent.getIntExtra(EXTRA_COLOR, R.color.yellow);
+        int contactId = intent.getIntExtra(CONTACT_NUMBER, MainActivity.mContactNumber);
 
         // Select the radio button matching the color ID
-        int radioId = R.id.radio_yellow;
-        if (colorId == R.color.red) {
-            radioId = R.id.radio_red;
+        if(contactId == 1){
+
         }
-        else if (colorId == R.color.orange) {
-            radioId = R.id.radio_orange;
+        else if(contactId == 2){
+
         }
-        else if (colorId == R.color.green) {
-            radioId = R.id.radio_green;
+        else if(contactId == 3){
+
         }
 
-        RadioButton radio = findViewById(radioId);
-        radio.setChecked(true);
     }
 
     public void backButtonClick(View view){

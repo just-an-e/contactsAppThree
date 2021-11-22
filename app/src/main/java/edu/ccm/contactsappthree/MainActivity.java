@@ -14,7 +14,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String mContactName;
+    public static int mContactNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,19 +24,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void detailsButtonOneClick(View view){
         Intent intent = new Intent(this, ContactActivity.class);
-        mContactName = String.valueOf(R.string.contactOneTextString);
-        intent.putExtra(mContactName);
+        mContactNumber = 1;
+        intent.putExtra(ContactActivity.CONTACT_NUMBER, mContactNumber);
         mColorResultLauncher.launch(intent);
     }
 
     public void detailsButtonTwoClick(View view){
         Intent intent = new Intent(this, ContactActivity.class);
-        startActivity(intent);
+        mContactNumber = 2;
+        intent.putExtra(ContactActivity.CONTACT_NUMBER, mContactNumber);
+        mColorResultLauncher.launch(intent);
     }
 
     public void detailsButtonThreeClick(View view){
         Intent intent = new Intent(this, ContactActivity.class);
-        startActivity(intent);
+        mContactNumber = 3;
+        intent.putExtra(ContactActivity.CONTACT_NUMBER, mContactNumber);
+        mColorResultLauncher.launch(intent);
     }
 
     private final ActivityResultLauncher<Intent> mColorResultLauncher = registerForActivityResult(
@@ -44,15 +48,7 @@ public class MainActivity extends AppCompatActivity {
             new ActivityResultCallback<ActivityResult>() {
                 @Override
                 public void onActivityResult(ActivityResult result) {
-                    if (result.getResultCode() == Activity.RESULT_OK) {
-                        Intent data = result.getData();
-                        if (data != null) {
-                            // Create the "on" button color from the chosen color ID from ColorActivity
-                            mLightOnColorId = data.getIntExtra(ColorActivity.EXTRA_COLOR, R.color.yellow);
-                            mLightOnColor = ContextCompat.getColor(MainActivity.this, mLightOnColorId);
-                            setButtonColors();
-                        }
-                    }
+
                 }
             });
 }
